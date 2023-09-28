@@ -1,0 +1,590 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --pink: rgb(248, 83, 165);
+    --green:rgb(51, 194, 226);
+    --bt:rgb(22, 95, 111);
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(6, 191, 233, 0.4);
+    height: 130px;
+    position: fixed;
+    width: 100%;
+    animation: navbar 1s ease ;
+    z-index: 9999;
+}
+nav .logo img{
+    width: 130px;
+    height: 90px;
+    animation: logo 1s ease;
+}
+@keyframes logo {
+    0%{
+        margin-top: -80px;
+    }100%{
+        margin: 0;
+    }
+    
+}
+nav .menu{
+    display: flex;
+    z-index: 999;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu li{
+    margin: 0px 15px;
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+   
+}
+.menu a:hover{
+    background-image: linear-gradient( 90deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
+    background-size: 180%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border-bottom: 2px solid var(--bt);
+    animation: hoverr 1.2s ease infinite alternate;
+}
+@keyframes hoverr {
+    0%{
+        background-position: left;
+    }100%{
+        background-position: right;
+    }
+}
+@keyframes navbar {
+    0%{
+        height: 0px;
+    }100%{
+        height: 130px;
+
+    }
+    
+}
+
+/* MAIN */
+main{
+    width: 100%;
+    height: 880px;
+    background-image: url(enak.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   box-sizing: border-box;
+}
+.warnaMain{
+    background-color:  rgba(6, 191, 233, 0.6);
+    width: 100%;
+    height: 880px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.gambarMain{
+    margin-top: 300px;
+}
+.gambarMain img{
+    width: 200px;
+    height: 140px;
+}
+
+.kuat{
+    margin-left: -20px;
+    margin-top: -60px;
+    width: 70%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.gerak{
+    position: absolute;
+    z-index: 99;
+}
+
+.dynamic {
+    line-height: 165px;
+    height: 155px;
+    list-style: none;
+   overflow: hidden;
+   
+}
+.dynamic li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dynamic li a{
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+    font-family: 'Coming Soon', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 0;
+    animation: naik 5s steps(3) infinite;
+
+}
+.dynamic a span{
+    text-decoration: line-through;
+}
+@keyframes naik{
+    100% {
+        top: -490px;
+    }
+}
+.downpink{
+    margin-bottom: -7px;
+    text-align: center;
+}
+.downpink img{
+    width: 185px;
+}
+
+/* ------SEcond--/ */
+/* WELCOME */
+.main2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome{
+    margin: 100px auto;
+    font-size: 90px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    color: var(--pink);
+    animation: welcome 2s ease;
+}
+.properti{
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: properti 2s ease;
+}
+.properti .me{
+    margin: 0 70px; 
+    animation: properti2 2s ease;
+    width: 50px;
+}
+
+.properti .garis{
+    position: relative;
+    width: 230px;
+    height: 60px;
+}
+.main2 p{
+    line-height: 30px;
+    word-spacing: 6px;
+    width: 75%;
+    font-size: 17px;
+    color: gray;
+    font-weight: 500;
+    font-family: 'REM', sans-serif;
+    margin-top: 15px;
+    animation: text 2s ease;
+}
+@keyframes welcome {
+    0%{
+        margin-top: -10px;
+}100%{
+    margin: 100px auto;
+}
+}
+@keyframes properti {
+    0%{
+        margin-top: -105px;
+        opacity: 0;
+}100%{
+
+    
+}
+}
+@keyframes properti2 {
+    0%{
+        margin: 0 200px;
+}100%{
+    margin: 0 70px;
+
+    
+}
+}
+@keyframes text {
+    0%{
+        margin-top: 280px;
+   }100%{
+    margin-top: 15px;
+}
+}
+
+.main3{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+.container3{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.about {
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+
+}
+.aboutText{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about  h1{
+    margin-left: 0px;
+    margin-top: -20px;
+    font-size: 90px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    color: var(--pink);
+    animation: about 2s ease;
+    
+}
+@keyframes about {
+    from{
+        transform: scale(0.5);
+
+    }to{
+        transform: scale(1);
+    }
+    
+}
+.about .me2{
+    position: relative;
+    top: -5px;
+    width: 45px;
+    margin-top: -20px;
+    animation: me2 1.5s ease;
+}
+@keyframes me2 {
+    from{
+        transform: scale(0);
+        transform: rotate(200deg);
+
+    }to{
+        transform: scale(1);
+    }
+}
+.about .garis2{
+    margin: 0 8px; 
+    width: 100px;
+    height: 60px;
+    animation: garis2 1.5s ease;
+}
+@keyframes garis2 {
+    from{
+        transform: scale(0.5);
+        margin: 0 30px;
+
+    }to{
+        transform: scale(1);
+        margin: 0 8px;
+    }
+}
+
+.gerak2{
+    margin-top: -75px;
+}
+.about .tuisanAbout{
+    margin-top: 3px;
+    line-height: 30px;
+    word-spacing: 6px;
+    font-size: 17px;
+    color: gray;
+    font-weight: 500;
+    font-family: 'REM', sans-serif;
+}
+.gambarAbout{
+    display: flex;
+}
+/* . */
+
+.gambarAbout .s{
+    background-image: url(makan.jpg);
+    filter: brightness(80%);
+    background-size: 105%;
+    background-position: center;
+     width: 300px;
+    height: 400px;
+    transition: 0.2s;
+}
+.gambarAbout .s:hover{
+    filter: brightness(60%);
+    background-size: 120%;
+    background-position: center;
+}
+.gambarAbout .ss{
+    background-image: url(Untitled-1.jpg);
+    filter: brightness(80%);
+    background-size: 105%;
+    background-position: center;
+    width: 300px;
+    height: 400px;
+    transition: 0.2s;
+    animation: geser 2s ease;
+}
+
+
+.gambarAbout .ss:hover{
+    background-position: center;
+    filter: brightness(60%);
+    background-size: 120%;
+}
+
+@keyframes geser {
+    0%{
+        margin-right: -400px;
+    }100%{
+        margin-right: 0;
+    }
+}
+
+/* main4 */
+.gambar4{
+    width: 75%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tengah img{
+    width: 220px;
+    height: 150px;
+}
+.main4{
+    width: 75%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gambarempat{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 8px;
+}
+.empat1{
+    background-image: url(makan\(1\).jpg);
+    background-position: center;
+    width: 300px;
+    height: 400px;
+    transition: 0.2s;
+    filter: brightness(90%);
+    background-size: 104%;
+    animation: geser4 2s ease;
+}
+
+.empat1:hover{
+    filter: brightness(60%);
+    background-size: 120%;
+    background-position: center;
+}
+.empat2{
+    background-image: url(4.png);
+    background-position: center;
+    width: 300px;
+    height: 400px;
+    transition: 0.2s;
+    filter: brightness(90%);
+    background-size: 104%;
+    animation: geser4 1s ease;
+    
+}
+.empat2:hover{
+    filter: brightness(60%);
+
+    background-size: 120%;
+    background-position: center;
+}
+@keyframes geser4 {
+    from{
+        margin-left: -400px;
+    }to{
+        margin-left: 0;
+    }
+}
+.visi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+}
+.tulisVisi {
+    position: relative;
+    top: -80px; 
+    font-size: 90px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    color: var(--pink);
+}
+.symbol3{
+    display: flex;
+    position: relative;
+    top: -150px;
+
+}
+.garis3{
+    margin: 0 8px; 
+    width: 90px;
+    height: 50px;
+}
+.me3{
+    width: 40px;
+}
+.tulisVisiP{
+    text-align: center;
+    position: relative;
+    bottom: 145px;
+    width: 85%;
+    font-size: 17px;
+    word-spacing: 5px;
+    color: gray;
+    font-weight: 500;
+    font-family: 'REM', sans-serif;
+
+}
+
+/* main5 */
+.main5{
+    width: 75%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 280px;
+}
+.misi{
+    height: 280px;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.tulisMisi{
+    position: relative;
+    top: -10px;
+    font-size: 80px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    color: var(--pink);
+}
+.lima1{
+    margin-left: 17px;
+    background-image: url(5.jpg);
+    background-position: center;
+    background-size: 117%;
+    width: 210px;
+    height: 280px;
+    transition: 0.2s;
+    filter: brightness(90%);
+    animation: gerak5 2s ease;
+}
+.lima1:hover{
+    background-size: 130%;
+    background-position: center;
+    filter: brightness(60%);
+}
+.lima2{
+    margin-right: 23px;
+    background-image: url(5.1.jpg);
+    background-position: center;
+    background-size: 150%;
+    width: 210px;
+    height: 280px;
+    filter: brightness(80%);
+    transition: 0.2s;
+    animation: gerak5 2s ease;
+}
+.lima2:hover{
+    background-size: 170%;
+    background-position: center;
+    filter: brightness(60%);
+}
+@keyframes gerak5 {
+    form{
+        transform: scale(0.3);
+    }to{
+        transform: scale(1);
+    }
+}
+
+.symbol4{
+    display: flex;
+    position: relative;
+    top: -70px;
+
+}
+.garis4{
+    margin: 0 8px; 
+    width: 120px;
+    height: 50px;
+}
+.me4{
+    width: 40px;
+    margin: 0px 15px;
+}
+.tulisMisiP{
+    text-align: left;
+    position: relative;
+    bottom: 65px;
+    font-size: 17px;
+    word-spacing: 5px;
+    color: gray;
+    font-weight: 500;
+    font-family: 'REM', sans-serif;
+
+}
+.tulisMisiP .line1{
+    margin-bottom: -0px;
+}
+.tulisMisiP .line{
+    margin: 10px 0px;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: var(--pink);
+}
